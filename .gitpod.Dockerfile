@@ -14,3 +14,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Install Node.js and npm
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
+
+# Install MySQL
+RUN sudo apt-get install -y mysql-server
+
+# Start MySQL service
+RUN sudo service mysql start

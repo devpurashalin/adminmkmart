@@ -3,9 +3,20 @@ image:
 
 tasks:
   - init: |
+      sudo service mysql start
+
+      mysql -u root -e "CREATE DATABASE IF NOT EXISTS mukeshkirana;"
+
+      mysql -u root mukeshkirana < database_dump.sql
+
+      cp .env.example .env
+      php artisan key:generate
+
       composer install
       npm install
       npm run dev
+
+    # Serve the application
     command: php artisan serve --host=0.0.0.0 --port=8000
 
 ports:
