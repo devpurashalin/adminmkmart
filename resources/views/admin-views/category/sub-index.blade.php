@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--24" alt="{{ translate('category') }}">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--24" alt="{{ translate('category') }}">
                 </span>
                 <span>
                     {{translate('sub_category_setup')}}
@@ -163,7 +163,7 @@
 
                         @if(count($categories) == 0)
                         <div class="text-center p-4">
-                            <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
+                            <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
                             <p class="mb-0">{{translate('No_data_to_show')}}</p>
                         </div>
                         @endif

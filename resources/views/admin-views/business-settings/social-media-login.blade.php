@@ -19,7 +19,7 @@
                     <div class="card-body">
                         <div class="__social-media-login-top">
                             <div class="__social-media-login-icon">
-                                <img src="{{asset('/public/assets/admin/img/google.png')}}" alt="{{ translate('google') }}">
+                                <img src="{{asset('/assets/admin/img/google.png')}}" alt="{{ translate('google') }}">
                             </div>
                             <div class="text-center sub-txt">{{translate('Google Login')}}</div>
                             <div class="custom--switch switch--right change-social-login-status" data-route="{{route('admin.business-settings.web-app.third-party.google-social-login',[$status])}}">
@@ -40,7 +40,7 @@
                     <div class="card-body">
                         <div class="__social-media-login-top">
                             <div class="__social-media-login-icon">
-                                <img src="{{asset('/public/assets/admin/img/facebook.png')}}" alt="{{ translate('facebook') }}">
+                                <img src="{{asset('/assets/admin/img/facebook.png')}}" alt="{{ translate('facebook') }}">
                             </div>
                             <div class="text-center sub-txt">{{translate('Facebook Login')}}</div>
                             <div class="custom--switch switch--right change-social-login-status" data-route="{{route('admin.business-settings.web-app.third-party.facebook-social-login',[$status])}}">
@@ -62,7 +62,7 @@
                             <div class="card-header card-header-shadow">
                                 <div class="__social-media-login-top flex-grow-1">
                                     <h5 class="card-title align-items-center ">
-                                        <img src="{{asset('/public/assets/admin/img/modal/apple.png')}}" class="mr-1 w--20" alt="{{ translate('apple') }}">
+                                        <img src="{{asset('/assets/admin/img/modal/apple.png')}}" class="mr-1 w--20" alt="{{ translate('apple') }}">
                                         {{translate('Apple Login')}}
                                     </h5>
                                     <div class="custom--switch switch--right">
@@ -124,7 +124,7 @@
                 </div>
                 <div class="modal-body pb-0"><b></b>
                     <div class="text-center mb-20">
-                        <img src="{{asset('/public/assets/admin/img/modal/apple.png')}}" alt="" class="mb-3">
+                        <img src="{{asset('/assets/admin/img/modal/apple.png')}}" alt="" class="mb-3">
                         <h5 class="modal-title mb-2">{{translate('apple_api_set_instruction')}}</h5>
                     </div>
                     <ol>

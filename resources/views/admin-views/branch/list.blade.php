@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/add_branch.png')}}" class="w--20" alt="{{ translate('branch') }}">
+                    <img src="{{asset('assets/admin/img/add_branch.png')}}" class="w--20" alt="{{ translate('branch') }}">
                 </span>
                 <span>
                     {{translate('branch List')}} <span class="badge badge-soft-secondary">{{ $branches->total() }}</span>

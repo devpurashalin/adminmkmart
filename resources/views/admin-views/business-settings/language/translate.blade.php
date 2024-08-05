@@ -3,7 +3,7 @@
 @section('title', translate('Language Translate'))
 
 @push('css_or_js')
-    <link href="{{asset('public/assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{asset('assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -62,7 +62,7 @@
 @push('script')
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
 
-    <script src="{{asset('public/assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script>
 
         $(document).ready(function () {

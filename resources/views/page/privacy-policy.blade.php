@@ -12,15 +12,15 @@
     @php($icon = \App\Model\BusinessSetting::where(['key' => 'fav_icon'])->first()->value)
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/app/public/restaurant/' . $icon ?? '') }}">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/custom.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/custom.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/theme.minc619.css?v=1.0">
     <script
-        src="{{asset('public/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">
+        src="{{asset('assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/toastr.css">
 
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/bootstrap.css">
 
 </head>
 <body class="toolbar-enabled">

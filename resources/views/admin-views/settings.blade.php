@@ -194,8 +194,8 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('public/assets/admin/js/upload-single-image.js')}}"></script>
-    <script src="{{asset('public/assets/admin/js/setting.js')}}"></script>
+    <script src="{{asset('assets/admin/js/upload-single-image.js')}}"></script>
+    <script src="{{asset('assets/admin/js/setting.js')}}"></script>
     <script>
         "use strict";
 

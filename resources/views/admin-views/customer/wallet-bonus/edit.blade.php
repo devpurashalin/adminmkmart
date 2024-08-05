@@ -7,7 +7,7 @@
         <div class="mb-3">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/wallet.png')}}" class="width-24" alt="{{ translate('wallet') }}">
+                    <img src="{{asset('assets/admin/img/wallet.png')}}" class="width-24" alt="{{ translate('wallet') }}">
                 </span>
                 <span class="ml-2">{{translate('Wallet Bonus Update')}}</span>
             </h1>

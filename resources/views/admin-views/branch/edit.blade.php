@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/add_branch.png')}}" class="w--24" alt="{{ translate('branch') }}">
+                    <img src="{{asset('assets/admin/img/add_branch.png')}}" class="w--24" alt="{{ translate('branch') }}">
                 </span>
                 <span>
                     {{translate('branch')}} {{translate('update')}}
@@ -108,7 +108,7 @@
                                                        for="latitude">{{ translate('latitude') }}<span
                                                         class="form-label-secondary pl-1" data-toggle="tooltip" data-placement="right"
                                                         data-original-title="{{ translate('click_on_the_map_select_your_default_location') }}"><img
-                                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                             alt="{{ translate('click_on_the_map_select_your_default_location') }}"></span></label>
                                                 <input type="text" id="latitude" name="latitude" class="form-control"
                                                        placeholder="{{ translate('Ex:') }} 23.8118428"
@@ -121,7 +121,7 @@
                                                 for="longitude">{{ translate('longitude') }}<span
                                                     class="form-label-secondary pl-1" data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.click_on_the_map_select_your_default_location') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('click_on_the_map_select_your_default_location') }}"></span></label>
                                                 <input type="text" name="longitude" class="form-control"
                                                        placeholder="{{ translate('Ex:') }} 90.356331" id="longitude"
@@ -167,6 +167,6 @@
 @push('script_2')
 
 <script src="https://maps.googleapis.com/maps/api/js?key={{ Helpers::get_business_settings('map_api_client_key') }}&libraries=places&v=3.45.8"></script>
-<script src="{{ asset('public/assets/admin/js/branch.js') }}"></script>
+<script src="{{ asset('assets/admin/js/branch.js') }}"></script>
 
 @endpush

@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--20" alt="{{ translate('deliveryman') }}">
+                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--20" alt="{{ translate('deliveryman') }}">
                 </span>
                 <span>
                     {{$deliveryman['f_name'].' '.$deliveryman['f_name']}}
@@ -240,7 +240,7 @@
             </div>
             @if(count($reviews)==0)
                 <div class="text-center p-4">
-                    <img class="w-120px mb-3" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="{{ translate('image') }}">
+                    <img class="w-120px mb-3" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="{{ translate('image') }}">
                     <p class="mb-0">{{ translate('No_data_to_show')}}</p>
                 </div>
             @endif

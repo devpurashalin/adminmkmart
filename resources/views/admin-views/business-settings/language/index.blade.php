@@ -8,7 +8,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/lang.png')}}" class="w--24" alt="{{ translate('language') }}">
+                <img src="{{asset('assets/admin/img/lang.png')}}" class="w--24" alt="{{ translate('language') }}">
             </span>
             <span>
                 {{translate('system settings')}}

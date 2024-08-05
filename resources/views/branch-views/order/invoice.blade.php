@@ -17,7 +17,7 @@
             @php($logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
             <div class="initial-38-1">
                 <div class="pt-3">
-                    <img src="{{ App\CentralLogics\Helpers::onErrorImage($logo, asset('storage/app/public/restaurant') . '/' . $logo, asset('/public/assets/admin/img/food.png'), 'restaurant/')}}"
+                    <img src="{{ App\CentralLogics\Helpers::onErrorImage($logo, asset('storage/app/public/restaurant') . '/' . $logo, asset('/assets/admin/img/food.png'), 'restaurant/')}}"
                          class="initial-38-2" alt="{{ translate('logo') }}">
                 </div>
                 <div class="text-center pt-2 mb-3">

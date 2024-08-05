@@ -15,7 +15,7 @@ ini_set('memory_limit', '-1');
         <div class="page-header">
             <div class="media align-items-center mb-2">
                 <div class="">
-                    <img src="{{asset('public/assets/admin/img/order-img.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/order-img.png')}}" class="w--20" alt="">
                 </div>
 
                 <div class="media-body pl-3">
@@ -511,10 +511,10 @@ ini_set('memory_limit', '-1');
 
 @push('script_2')
 
-    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
     <script
-        src="{{asset('public/assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{asset('public/assets/admin')}}/js/hs.chartjs-matrix.js"></script>
-    <script src="{{asset('public/assets/admin/js/flatpicker.js')}}"></script>
-    <script src="{{asset('public/assets/admin/js/order-report.js')}}"></script>
+        src="{{asset('assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{asset('assets/admin')}}/js/hs.chartjs-matrix.js"></script>
+    <script src="{{asset('assets/admin/js/flatpicker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/order-report.js')}}"></script>
 @endpush

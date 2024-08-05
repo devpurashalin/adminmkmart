@@ -1,7 +1,7 @@
 
 <h1 class="page-header-title">
     <span class="page-header-icon">
-        <img src="{{asset('/public/assets/admin/img/third-party.png')}}" class="w--20" alt="">
+        <img src="{{asset('/assets/admin/img/third-party.png')}}" class="w--20" alt="">
     </span>
     <span>
         {{translate('Third Party')}}

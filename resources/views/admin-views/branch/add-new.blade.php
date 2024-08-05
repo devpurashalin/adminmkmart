@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/add_branch.png')}}" class="w--20" alt="{{ translate('branch') }}">
+                    <img src="{{asset('assets/admin/img/add_branch.png')}}" class="w--20" alt="{{ translate('branch') }}">
                 </span>
                 <span>
                     {{translate('add New Branch')}}
@@ -53,7 +53,7 @@
                                                 </div>
                                                 <label class="upload--squire">
                                                     <input type="file" name="image" id="customFileEg1" class="" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
-                                                    <img id="viewer" src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="{{ translate('branch image') }}"/>
+                                                    <img id="viewer" src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="{{ translate('branch image') }}"/>
                                                 </label>
                                             </div>
                                         </div>
@@ -172,5 +172,5 @@
 
 @push('script_2')
     <script src="https://maps.googleapis.com/maps/api/js?key={{ Helpers::get_business_settings('map_api_client_key') }}&libraries=places&v=3.45.8"></script>
-    <script src="{{ asset('public/assets/admin/js/branch.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/branch.js') }}"></script>
 @endpush

@@ -34,7 +34,7 @@
                     <div class="card-header">
                         <h5 class="card-title d-flex align-items-center">
                             <span class="card-header-icon mb-1 mr-2">
-                                <img src="{{asset('public/assets/admin/img/bag.png')}}" class="w--17" alt="">
+                                <img src="{{asset('assets/admin/img/bag.png')}}" class="w--17" alt="">
                             </span>
                             <span>{{translate('Business Information')}}</span>
                         </h5>
@@ -583,7 +583,7 @@
                                             <span class="line--limit-1">
                                                 <strong>{{translate('self_pickup')}}</strong>
                                             </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When this option is enabled the user may pick up their own order.')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When this option is enabled the user may pick up their own order.')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" name="self_pickup" class="toggle-switch-input" {{ $sp == 1 ? 'checked' : '' }}>
@@ -606,7 +606,7 @@
                                             <span class="line--limit-1">
                                                 <strong>{{translate('email verification')}}</strong>
                                             </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their email verication through an OTP')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their email verication through an OTP')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" class="toggle-switch-input" name="email_verification" {{ $ev == 1 ? 'checked' : '' }}>
@@ -628,7 +628,7 @@
                                                 <span class="line--limit-1">
                                                     <strong>{{translate('phone')}} {{translate('verification')}}</strong>
                                                 </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their phone number through an OTP')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active, customer have to verify their phone number through an OTP')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" class="toggle-switch-input" name="phone_verification" {{ $pv == 1 ? 'checked' : '' }}>
@@ -652,7 +652,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('When this field is active, delivery men can register themself using the delivery man app.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" name="dm_self_registration" class="toggle-switch-input" {{ $dm_self_registration == 1 ? 'checked' : '' }}>
@@ -675,7 +675,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('When this option is active, users may place orders as guests without logging in.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" name="guest_checkout" class="toggle-switch-input" {{ $guest_checkout == 1 ? 'checked' : '' }}>
@@ -697,7 +697,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('When this option is enabled, users may pay up to a certain amount using their wallet balance.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" name="partial_payment" class="toggle-switch-input" {{ $partial_payment == 1 ? 'checked' : '' }}>
@@ -713,7 +713,7 @@
                                         <label class="input-label text-capitalize">{{translate('partial_payment_combine_with')}}
                                             <span class="form-label-secondary text-danger ml-1" data-toggle="tooltip" data-placement="right"
                                                   data-original-title="{{translate('The wallet balance will be combined with the chosen payment method to complete the transaction.')}}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                             </span>
                                         </label>
                                         <select name="partial_payment_combine_with" class="form-control">

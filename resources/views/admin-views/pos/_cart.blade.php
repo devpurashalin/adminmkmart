@@ -44,11 +44,11 @@
                                     @if (!empty(json_decode($cartItem['image'],true)))
                                         <img class="avatar avatar-sm mr-1"
                                             src="{{asset('storage/app/public/product')}}/{{json_decode($cartItem['image'], true)[0]}}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/160x160/2.png')}}'"
+                                            onerror="this.src='{{asset('assets/admin/img/160x160/2.png')}}'"
                                             alt="{{$cartItem['name']}} {{translate('image')}}">
                                     @else
                                         <img class="avatar avatar-sm mr-1"
-                                        src="{{asset('public/assets/admin/img/160x160/2.png')}}">
+                                        src="{{asset('assets/admin/img/160x160/2.png')}}">
                                     @endif
                                     <div class="media-body">
                                         <h6 class="text-hover-primary mb-0">{{Str::limit($cartItem['name'], 10)}}</h6>

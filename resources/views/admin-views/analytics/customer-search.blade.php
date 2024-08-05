@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/analytics_logo.png')}}" class="w--20" alt="{{ translate('analytics') }}">
+                    <img src="{{asset('assets/admin/img/analytics_logo.png')}}" class="w--20" alt="{{ translate('analytics') }}">
                 </span>
                 <span>
                     {{translate('Customer_Search_Analytics')}}
@@ -171,7 +171,7 @@
                                     <div class="avatar avatar-lg">
                                         <a href="{{$value->customer ? route('admin.customer.view',[$value->customer['id']]) : '#'}}" class="product-list-media">
                                             <img class="rounded-full"
-                                                 src="{{$value->customer->imageFullPath ?? asset('public/assets/admin/img/160x160/2.png')}}"
+                                                 src="{{$value->customer->imageFullPath ?? asset('assets/admin/img/160x160/2.png')}}"
                                                 alt="{{ translate('customer') }}">
                                         </a>
                                     </div>
@@ -219,7 +219,7 @@
                     @if(count($customersData) == 0)
                         <div class="text-center p-4">
                             <img class="w-120px mb-3"
-                                 src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}"
+                                 src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}"
                                  alt="{{ translate('image') }}">
                             <p class="mb-0">{{translate('No_data_to_show')}}</p>
                         </div>
@@ -273,7 +273,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('/public/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
     <script>
         "use strict";
 

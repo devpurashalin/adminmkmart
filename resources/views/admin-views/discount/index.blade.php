@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/coupon.png')}}" class="w--20" alt="{{ translate('discount') }}">
+                    <img src="{{asset('assets/admin/img/coupon.png')}}" class="w--20" alt="{{ translate('discount') }}">
                 </span>
                 <span>
                     {{translate('discount')}}
@@ -179,7 +179,7 @@
             </div>
             @if(count($discounts) == 0)
                 <div class="text-center p-4">
-                    <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
+                    <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
                     <p class="mb-0">{{translate('No_data_to_show')}}</p>
                 </div>
             @endif
@@ -189,5 +189,5 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/discount.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/discount.js') }}"></script>
 @endpush

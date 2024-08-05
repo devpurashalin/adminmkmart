@@ -190,7 +190,7 @@
                                     <img class="h--92px"
                                          src="{{ App\CentralLogics\Helpers::onErrorImage($additional_data != null ? $additional_data->gateway_image : '',
                                                asset('storage/app/public/payment_modules/gateway_image') . '/' . ($additional_data != null ? $additional_data->gateway_image : ''),
-                                               asset('public/assets/admin/img/placeholder.png'), 'payment_modules/gateway_image/')}}"
+                                               asset('assets/admin/img/placeholder.png'), 'payment_modules/gateway_image/')}}"
                                          alt="{{ translate('gateway_image') }}">
                                 </div>
 

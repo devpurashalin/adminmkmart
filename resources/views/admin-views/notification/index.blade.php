@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/notification.png')}}" class="w--20" alt="{{ translate('notification') }}">
+                    <img src="{{asset('assets/admin/img/notification.png')}}" class="w--20" alt="{{ translate('notification') }}">
                 </span>
                 <span>
                     {{translate('Send Push Notification')}}
@@ -45,7 +45,7 @@
                                         </h5>
                                         <label class="upload--vertical mt-auto">
                                             <input type="file" name="image" id="customFileEg1" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
-                                            <img id="viewer" src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="notification image"/>
+                                            <img id="viewer" src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="notification image"/>
                                         </label>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                         </table>
                         @if(count($notifications)==0)
                             <div class="text-center p-4">
-                                <img class="mb-3 width-7rem" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="{{ translate('image') }}">
+                                <img class="mb-3 width-7rem" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="{{ translate('image') }}">
                                 <p class="mb-0">{{ translate('No_data_to_show')}}</p>
                             </div>
                         @endif
@@ -171,5 +171,5 @@
 @endsection
 
 @push('script_2')
-<script src="{{ asset('public/assets/admin/js/upload-single-image.js') }}"></script>
+<script src="{{ asset('assets/admin/js/upload-single-image.js') }}"></script>
 @endpush

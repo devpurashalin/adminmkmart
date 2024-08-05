@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/flash_sale.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/flash_sale.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('flash sale')}}
@@ -52,7 +52,7 @@
                                 </h5>
                                 <label class="upload--vertical">
                                     <input type="file" name="image" id="customFileEg1" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
-                                    <img id="viewer" src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="{{translate('banner image')}}"/>
+                                    <img id="viewer" src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="{{translate('banner image')}}"/>
                                 </label>
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                             <td>
                                 <div class="btn--container justify-content-center">
                                     <a class="h-30 d-flex gap-2 align-items-center btn btn-soft-info btn-sm border-info" href="{{route('admin.offer.flash.add-product',[$flash_deal['id']])}}">
-                                        <img src="{{asset('/public/assets/back-end/img/plus.svg')}}" class="svg" alt="">
+                                        <img src="{{asset('/assets/back-end/img/plus.svg')}}" class="svg" alt="">
                                         {{translate('Add Product')}}
                                     </a>
                                     <a class="action-btn"
@@ -168,7 +168,7 @@
             </div>
             @if(count($flashDeals) == 0)
                 <div class="text-center p-4">
-                    <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{translate('Image Description')}}">
+                    <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{translate('Image Description')}}">
                     <p class="mb-0">{{translate('No_data_to_show')}}</p>
                 </div>
             @endif
@@ -178,6 +178,6 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/flatpicker.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/upload-single-image.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/flatpicker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/upload-single-image.js') }}"></script>
 @endpush

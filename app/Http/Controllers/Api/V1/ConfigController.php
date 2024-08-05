@@ -106,7 +106,7 @@ class ConfigController extends Controller
                 'chat_image_url'         => asset('storage/app/public/conversation'),
                 'flash_sale_image_url'   => asset('storage/app/public/offer'),
                 'gateway_image_url'      => asset('storage/app/public/payment_modules/gateway_image'),
-                'payment_image_url'      => asset('public/assets/admin/img/payment'),
+                'payment_image_url'      => asset('assets/admin/img/payment'),
                 'order_image_url'      => asset('storage/app/public/order'),
             ],
             'currency_symbol'             => $currencySymbol,

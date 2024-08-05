@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('deliveryman') }}">
+                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('deliveryman') }}">
                 </span>
                 <span>
                     {{translate('update deliveryman')}}
@@ -169,7 +169,7 @@
         });
     </script>
 
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({
@@ -179,7 +179,7 @@
                 groupClassName: 'two__item',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/upload-vertical.png')}}',
+                    image: '{{asset('assets/admin/img/upload-vertical.png')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

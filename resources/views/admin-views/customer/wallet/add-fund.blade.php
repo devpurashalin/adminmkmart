@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/public/assets/admin/img/money.png')}}" alt="{{ translate('image') }}">
+                    <img src="{{asset('/assets/admin/img/money.png')}}" alt="{{ translate('image') }}">
                 </div>
                 <span>
                     {{translate('add_fund')}}

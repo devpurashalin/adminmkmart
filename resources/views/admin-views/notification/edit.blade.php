@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--20" alt="{{ translate('notification') }}">
+                    <img src="{{asset('assets/admin/img/edit.png')}}" class="w--20" alt="{{ translate('notification') }}">
                 </span>
                 <span>
                     {{translate('notification update')}}
@@ -62,5 +62,5 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/upload-single-image.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/upload-single-image.js') }}"></script>
 @endpush

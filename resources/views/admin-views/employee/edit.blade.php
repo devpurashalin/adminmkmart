@@ -8,7 +8,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('employee') }}">
+                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('employee') }}">
             </span>
             <span>
                 {{translate('Update Employee')}}
@@ -147,8 +147,8 @@
 
 @push('script_2')
 
-<script src="{{asset('public/assets/back-end')}}/js/select2.min.js"></script>
-<script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+<script src="{{asset('assets/back-end')}}/js/select2.min.js"></script>
+<script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 
     <script>
         "use strict";
@@ -186,7 +186,7 @@
             groupClassName: 'two__item',
             maxFileSize: '',
             placeholderImage: {
-                image: '{{asset('public/assets/admin/img/upload-vertical.png')}}',
+                image: '{{asset('assets/admin/img/upload-vertical.png')}}',
                 width: '100%'
             },
             dropFileLabel: "Drop Here",

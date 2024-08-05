@@ -24,7 +24,7 @@
                                         <a class="topbar-link dropdown-toggle lang-country-flag" href="#" data-toggle="dropdown">
                                             @foreach($lang as $data)
                                                 @if($data['code']==$local)
-                                                    <img src="{{asset('public/assets/admin/img/google_translate_logo.png')}}" alt=""> <span>{{$data['code']}}</span>
+                                                    <img src="{{asset('assets/admin/img/google_translate_logo.png')}}" alt=""> <span>{{$data['code']}}</span>
                                                 @endif
                                             @endforeach
                                         </a>
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img"
-                                             src="{{ App\CentralLogics\Helpers::onErrorImage(auth('admin')->user()->image, asset('storage/app/public/admin') . '/' . auth('admin')->user()->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'admin/')}}"
+                                             src="{{ App\CentralLogics\Helpers::onErrorImage(auth('admin')->user()->image, asset('storage/app/public/admin') . '/' . auth('admin')->user()->image, asset('assets/admin/img/160x160/img1.jpg'), 'admin/')}}"
                                              alt="{{ translate('logo') }}">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                     </div>
@@ -102,7 +102,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                                  alt="{{ translate('admin') }}">
                                         </div>

@@ -33,7 +33,7 @@ class Banner extends Model
     public function getImageFullPathAttribute(): string
     {
         $image = $this->image ?? null;
-        $path = asset('public/assets/admin/img/900x400/img1.jpg');
+        $path = asset('assets/admin/img/900x400/img1.jpg');
 
         if (!is_null($image) && Storage::disk('public')->exists('banner/' . $image)) {
             $path = asset('storage/app/public/banner/' . $image);

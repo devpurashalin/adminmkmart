@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/analytics_logo.png')}}" class="w--20" alt="{{ translate('analytics') }}">
+                    <img src="{{asset('assets/admin/img/analytics_logo.png')}}" class="w--20" alt="{{ translate('analytics') }}">
                 </span>
                 <span>
                     {{translate('Keyword_Search_Analytics')}}
@@ -79,7 +79,7 @@
                                         class="bg-light h-100 rounded d-flex justify-content-center align-items-center p-3">
                                         <div class="text-center">
                                             <img class="mb-2" width="50"
-                                                 src="{{asset('public/assets/admin/img/analytics_logo.png')}}"
+                                                 src="{{asset('assets/admin/img/analytics_logo.png')}}"
                                                  alt="{{ translate('analytics_logo') }}">
                                             <h2 class="mb-2">{{$searchedKeywordCount}}</h2>
                                             <p>{{translate('Total Search Volume')}}</p>
@@ -191,7 +191,7 @@
                     @if(count($searchedTableData) == 0)
                         <div class="text-center p-4">
                             <img class="w-120px mb-3"
-                                 src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}"
+                                 src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}"
                                  alt="{{ translate('image') }}">
                             <p class="mb-0">{{translate('No_data_to_show')}}</p>
                         </div>
@@ -205,7 +205,7 @@
 @endsection
 
         @push('script_2')
-            <script src="{{asset('/public/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
+            <script src="{{asset('/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
             <script>
                 var options = {
                     //series: @json($graphData['count']),

@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/flash_sale.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/flash_sale.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('flash deal update')}}
@@ -72,6 +72,6 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/flatpicker.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/upload-single-image.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/flatpicker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/upload-single-image.js') }}"></script>
 @endpush

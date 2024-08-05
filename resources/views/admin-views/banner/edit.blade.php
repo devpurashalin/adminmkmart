@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/edit.png')}}" class="w--20" alt="{{ translate('banner') }}">
+                    <img src="{{asset('assets/admin/img/edit.png')}}" class="w--20" alt="{{ translate('banner') }}">
                 </span>
                 <span>
                     {{translate('Update Banner')}}
@@ -96,5 +96,5 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/banner.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/banner.js') }}"></script>
 @endpush

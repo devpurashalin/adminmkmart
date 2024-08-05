@@ -8,7 +8,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('employee') }}">
+                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('employee') }}">
             </span>
             <span>
                 {{translate('Employee Role Setup')}}
@@ -62,7 +62,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/custom-role.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/custom-role.js') }}"></script>
     <script>
         "use strict";
 

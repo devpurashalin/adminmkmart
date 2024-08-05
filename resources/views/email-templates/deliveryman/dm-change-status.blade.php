@@ -143,19 +143,19 @@
     <tbody>
     <tr>
         <td class="main-table-td">
-            <img style="width:120px;display:block;margin:10px 0" onerror="this.src='{{asset('/public/assets/admin/img//logo/main-logo.png')}}'"
+            <img style="width:120px;display:block;margin:10px 0" onerror="this.src='{{asset('/assets/admin/img//logo/main-logo.png')}}'"
                  src="{{ asset('storage/app/public/restaurant/' . $logo) }}" alt="public/img">
             @if($dm->is_active == 1)
                 <h2>{{ translate('Your Account Has Been Reopened By Admin') }}</h2>
                 <div class="mb-1">{{ translate('Hi') }} {{ $dm->f_name . ' '. $dm->l_name }},</div>
                 <div class="mb-2">{{ translate('Admin has open your account. you can login to app and can operate any action in the app') }}</div>
-                <img class="mb-2" src="{{asset('/public/assets/admin/img/email-templates/status-on.png')}}" alt="img">
+                <img class="mb-2" src="{{asset('/assets/admin/img/email-templates/status-on.png')}}" alt="img">
             @endif
             @if($dm->is_active == 0)
                 <h2>{{ translate('Your Account Has Been Suspended By Admin !') }}</h2>
                 <div class="mb-1">{{ translate('Hi') }} {{ $dm->f_name . ' '. $dm->l_name }},</div>
                 <div class="mb-2">{{ translate('Admin has closed your account. you cannot login to app and cannot operate any action in the app') }}</div>
-                <img class="mb-2" src="{{asset('/public/assets/admin/img/email-templates/status-off.png')}}" alt="img">
+                <img class="mb-2" src="{{asset('/assets/admin/img/email-templates/status-off.png')}}" alt="img">
             @endif
             <hr>
             <div class="mb-2">
@@ -176,19 +176,19 @@
                 </span>
             <span class="social" style="text-align:center">
                     <a href="{{ $socialMediaLinks['pinterest'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/pinterest.png')}}" alt="pinterest">
+                        <img src="{{asset('/assets/admin/img/img/pinterest.png')}}" alt="pinterest">
                     </a>
                     <a href="{{ $socialMediaLinks['instagram'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/instagram.png')}}" alt="instagram">
+                        <img src="{{asset('/assets/admin/img/img/instagram.png')}}" alt="instagram">
                     </a>
                     <a href="{{ $socialMediaLinks['facebook'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/facebook.png')}}" alt="facebook">
+                        <img src="{{asset('/assets/admin/img/img/facebook.png')}}" alt="facebook">
                     </a>
                     <a href="{{ $socialMediaLinks['linkedin'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/linkedin.png')}}" alt="linkedin">
+                        <img src="{{asset('/assets/admin/img/img/linkedin.png')}}" alt="linkedin">
                     </a>
                     <a href="{{ $socialMediaLinks['twitter'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/twitter.png')}}" alt="twitter">
+                        <img src="{{asset('/assets/admin/img/img/twitter.png')}}" alt="twitter">
                     </a>
                 </span>
             <span class="copyright">

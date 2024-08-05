@@ -27,7 +27,7 @@
                  data-zoom="{{$product->identityImageFullPath[0]}}"
                  alt="{{translate('Product image')}}" width="">
             @else
-                 <img src="{{asset('public/assets/admin/img/160x160/2.png')}}">
+                 <img src="{{asset('assets/admin/img/160x160/2.png')}}">
              @endif
             <div class="cz-image-zoom-pane"></div>
         </div>

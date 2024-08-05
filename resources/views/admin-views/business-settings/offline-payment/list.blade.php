@@ -9,7 +9,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/business_setup2.png')}}" alt="{{ translate('business_setup') }}">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/business_setup2.png')}}" alt="{{ translate('business_setup') }}">
                 <span class="page-header-title ml-2 mb-0">
                     {{translate('Offline Payment Method Setup')}}
                 </span>
@@ -115,7 +115,7 @@
 
                         @if(count($methods) == 0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('Image') }}">
+                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('Image') }}">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif

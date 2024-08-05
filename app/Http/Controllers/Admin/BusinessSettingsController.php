@@ -34,10 +34,10 @@ class BusinessSettingsController extends Controller
     public function businessSettingsIndex(): View|Factory|Application
     {
         $logoName = Helpers::get_business_settings('logo');
-        $logo = Helpers::onErrorImage($logoName, asset('storage/app/public/restaurant') . '/' . $logoName, asset('public/assets/admin/img/160x160/img2.jpg'), 'restaurant/');
+        $logo = Helpers::onErrorImage($logoName, asset('storage/app/public/restaurant') . '/' . $logoName, asset('assets/admin/img/160x160/img2.jpg'), 'restaurant/');
 
         $favIconName = Helpers::get_business_settings('fav_icon');
-        $favIcon = Helpers::onErrorImage($favIconName, asset('storage/app/public/restaurant') . '/' . $favIconName, asset('public/assets/admin/img/160x160/img2.jpg'), 'restaurant/');
+        $favIcon = Helpers::onErrorImage($favIconName, asset('storage/app/public/restaurant') . '/' . $favIconName, asset('assets/admin/img/160x160/img2.jpg'), 'restaurant/');
 
         if (!$this->businessSettings->where(['key' => 'fav_icon'])->first()) {
             DB::table('business_settings')->updateOrInsert(['key' => 'fav_icon'], [

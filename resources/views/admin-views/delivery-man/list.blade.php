@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('deliveryman') }}">
+                    <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('deliveryman') }}">
                 </span>
                 <span>
                     {{translate('deliveryman')}} {{translate('list')}}
@@ -49,7 +49,7 @@
                             <span class="dropdown-header">{{translate('download')}} {{translate('options')}}</span>
                             <a id="export-excel" class="dropdown-item"
                                href="{{route('admin.delivery-man.export', ['search'=>Request::get('search')])}}">
-                                <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('public/assets/admin')}}/svg/components/excel.svg" alt="{{ translate('excel') }}">
+                                <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('assets/admin')}}/svg/components/excel.svg" alt="{{ translate('excel') }}">
                                 {{translate('excel')}}
                             </a>
                         </div>
@@ -141,7 +141,7 @@
                 </div>
                 @if(count($deliverymen)==0)
                     <div class="text-center p-4">
-                        <img class="w-120px mb-3" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="{{ translate('image') }}">
+                        <img class="w-120px mb-3" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="{{ translate('image') }}">
                         <p class="mb-0">{{ translate('No_data_to_show')}}</p>
                     </div>
                 @endif

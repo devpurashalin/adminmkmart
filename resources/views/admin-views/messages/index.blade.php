@@ -3,7 +3,7 @@
 @section('title', translate('Messages'))
 
 @push('css_or_js')
-<link rel="stylesheet" href="{{asset('/public/assets/admin/css/lightbox.min.css')}}">
+<link rel="stylesheet" href="{{asset('/assets/admin/css/lightbox.min.css')}}">
 @endpush
 
 @section('content')
@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/messages.png')}}" class="w--24" alt="{{ translate('message') }}">
+                    <img src="{{asset('assets/admin/img/messages.png')}}" class="w--24" alt="{{ translate('message') }}">
                 </span>
                 <span>{{translate('Messages')}} <span class="badge badge-soft-primary ml-2" id="conversation_count"></span></span>
             </h1>
@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-8 col-xxl-9 pl-0 view-conversion" id="view-conversation">
                 <div class="h-100 d-flex justify-content-center align-items-center card __shadow rounded-left-0 py-5 py-md-0 text-center">
-                    <img src="{{asset('/public/assets/admin/img/view-conv.png')}}" class="mw-100" alt="{{ translate('image') }}">
+                    <img src="{{asset('/assets/admin/img/view-conv.png')}}" class="mw-100" alt="{{ translate('image') }}">
                     <div>
                         {{translate('Click from the customer list to view conversation')}}
                     </div>

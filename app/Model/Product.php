@@ -91,7 +91,7 @@ class Product extends Model
                 if (Storage::disk('public')->exists('product/' . $item)) {
                     $imageUrlArray[$key] = asset('storage/app/public/product/'. $item) ;
                 } else {
-                    $imageUrlArray[$key] = asset('public/assets/admin/img/160x160/2.png');
+                    $imageUrlArray[$key] = asset('assets/admin/img/160x160/2.png');
                 }
             }
         }

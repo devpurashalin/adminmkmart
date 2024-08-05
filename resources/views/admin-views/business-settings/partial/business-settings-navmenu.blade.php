@@ -2,7 +2,7 @@
 <div class="page-header">
     <h1 class="page-header-title">
         <span class="page-header-icon">
-            <img src="{{asset('public/assets/admin/img/business-setup.png')}}" class="w--22" alt="">
+            <img src="{{asset('assets/admin/img/business-setup.png')}}" class="w--22" alt="">
         </span>
         <span>{{translate('Business  Setup')}}</span>
     </h1>

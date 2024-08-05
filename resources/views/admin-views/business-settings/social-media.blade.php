@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/social.png')}}" class="w--26" alt="{{ translate('social') }}">
+                    <img src="{{asset('assets/admin/img/social.png')}}" class="w--26" alt="{{ translate('social') }}">
                 </span>
                 <span>
                     {{translate('social media Links')}}

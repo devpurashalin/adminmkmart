@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/business_setup2.png')}}" alt="{{ translate('Offline Payment') }}">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/business_setup2.png')}}" alt="{{ translate('Offline Payment') }}">
                 <span class="page-header-title mb-0 ml-2">
                     {{translate('Add Offline Payment Method')}}
                 </span>
@@ -143,7 +143,7 @@
                 <div class="modal-body">
                     <div class="d-flex align-items-center flex-column gap-3 text-center">
                         <h3>{{translate('Offline Payment')}}</h3>
-                        <img width="100" src="{{asset('public/assets/admin/img/offline_payment.png')}}" alt="">
+                        <img width="100" src="{{asset('assets/admin/img/offline_payment.png')}}" alt="">
                         <p class="text-muted">{{translate('This view is from the user app.')}} <br class="d-none d-sm-block"> {{translate('This is how customer will see in the app')}}</p>
                     </div>
 

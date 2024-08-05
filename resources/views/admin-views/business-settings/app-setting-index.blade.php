@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('/public/assets/admin/img/app.png')}}" class="w--20" alt="">
+                    <img src="{{asset('/assets/admin/img/app.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('system settings')}}
@@ -71,7 +71,7 @@
                                     <label class="form-label"
                                            for="ios_min_version">
                                            <span>{{ translate('Minimum version for force update') }}</span>
-                                           <span class="form-label-secondary ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate("If there is any update available in the admin panel and for that, the previous user app will not work, you can force the customer from here by providing the minimum version for force update. That means if a customer has an app below this version the customers must need to update the app first. If you don't need a force update just insert here zero (0) and ignore it.") }}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                           <span class="form-label-secondary ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate("If there is any update available in the admin panel and for that, the previous user app will not work, you can force the customer from here by providing the minimum version for force update. That means if a customer has an app below this version the customers must need to update the app first. If you don't need a force update just insert here zero (0) and ignore it.") }}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                            </span>
                                     </label>
                                     <input type="number" min="0" step=".1" id="android_min_version" name="android_min_version"
@@ -122,7 +122,7 @@
                                     <label class="form-label"
                                            for="ios_min_version">
                                            <span>{{ translate('Minimum version for force update') }}</span>
-                                           <span class="form-label-secondary ml-1" data-toggle="tooltip" data-placement="right" data-original-title='{{ translate("If there is any update available in the admin panel and for that, the previous user app will not work, you can force the customer from here by providing the minimum version for force update. That means if a customer has an app below this version the customers must need to update the app first. If you don't need a force update just insert here zero (0) and ignore it.") }}'><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                           <span class="form-label-secondary ml-1" data-toggle="tooltip" data-placement="right" data-original-title='{{ translate("If there is any update available in the admin panel and for that, the previous user app will not work, you can force the customer from here by providing the minimum version for force update. That means if a customer has an app below this version the customers must need to update the app first. If you don't need a force update just insert here zero (0) and ignore it.") }}'><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                            </span>
                                     </label>
                                     <input type="number" min="0" step=".1" id="ios_min_version" name="ios_min_version"

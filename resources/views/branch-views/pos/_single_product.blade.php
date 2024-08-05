@@ -21,7 +21,7 @@
     @if (!empty(json_decode($product['image'],true)))
         <img src="{{$product->identityImageFullPath[0]}}" class="w-100 h-100 object-cover aspect-ratio-80">
     @else
-        <img src="{{asset('public/assets/admin/img/160x160/2.png')}}" class="w-100 h-100 object-cover aspect-ratio-80"
+        <img src="{{asset('assets/admin/img/160x160/2.png')}}" class="w-100 h-100 object-cover aspect-ratio-80"
         >
     @endif
     </div>

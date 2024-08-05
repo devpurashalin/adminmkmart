@@ -7,7 +7,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/banner.png')}}" class="w--20" alt="{{ translate('banner') }}">
+                    <img src="{{asset('assets/admin/img/banner.png')}}" class="w--20" alt="{{ translate('banner') }}">
                 </span>
                 <span>
                     {{translate('banner setup')}}
@@ -67,7 +67,7 @@
                                 </h5>
                                 <label class="upload--vertical">
                                     <input type="file" name="image" id="customFileEg1" class="" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" hidden>
-                                    <img id="viewer" src="{{asset('public/assets/admin/img/upload-vertical.png')}}" alt="{{ translate('banner image') }}"/>
+                                    <img id="viewer" src="{{asset('assets/admin/img/upload-vertical.png')}}" alt="{{ translate('banner image') }}"/>
                                 </label>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
             </div>
             @if(count($banners) == 0)
                 <div class="text-center p-4">
-                    <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
+                    <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
                     <p class="mb-0">{{translate('No_data_to_show')}}</p>
                 </div>
             @endif
@@ -189,5 +189,5 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/banner.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/banner.js') }}"></script>
 @endpush

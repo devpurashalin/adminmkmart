@@ -43,7 +43,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('If the status is off most featured product will not show to user.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                         <input type="checkbox" name="featured_product_status" class="toggle-switch-input" {{ $featuredProductStatus == 1 ? 'checked' : '' }}>
@@ -64,7 +64,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('If the status is off most trending product will not show to user.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                         <input type="checkbox" name="trending_product_status" class="toggle-switch-input" {{ $trendingProductStatus == 1 ? 'checked' : '' }}>
@@ -86,7 +86,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('If the status is off most reviewed product will not show to user.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                         <input type="checkbox" name="most_reviewed_product_status" class="toggle-switch-input" {{ $mostReviewedProductStatus == 1 ? 'checked' : '' }}>
@@ -107,7 +107,7 @@
                                             </span>
                                                 <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{translate('If the status is off recommended product will not show to user.')}}">
-                                                    <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                    <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                         <input type="checkbox" name="recommended_product_status" class="toggle-switch-input" {{ $recommendedProductStatus == 1 ? 'checked' : '' }}>

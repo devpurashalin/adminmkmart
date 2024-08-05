@@ -25,7 +25,7 @@
                                     @foreach($image_array as $image)
                                         <div>
                                             <a href="{{$image}}" data-lightbox >
-                                                <img class="__img-120" src="{{$image}}" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" alt="{{ translate('image') }}"/>
+                                                <img class="__img-120" src="{{$image}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" alt="{{ translate('image') }}"/>
                                             </a>
                                         </div>
                                     @endforeach
@@ -92,8 +92,8 @@
     </div>
 </div>
 
-<script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
-<script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+<script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+<script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 <script>
     $(document).ready(function () {
         $('.scroll-down').animate({

@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--24" alt="{{ translate('category') }}">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--24" alt="{{ translate('category') }}">
                 </span>
                 <span>
                     @if($category->parent_id == 0)
@@ -103,7 +103,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/category.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/category.js') }}"></script>
     <script>
         "use strict";
 

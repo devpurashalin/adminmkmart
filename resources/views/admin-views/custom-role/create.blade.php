@@ -7,7 +7,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('public/assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('employee') }}">
+                <img src="{{asset('assets/admin/img/employee.png')}}" class="w--24" alt="{{ translate('employee') }}">
             </span>
             <span>
                 {{translate('Employee Role Setup')}}
@@ -82,7 +82,7 @@
                     <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right">
                         <span class="dropdown-header">{{translate('download')}} {{translate('options')}}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.custom-role.export')}}">
-                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('public/assets/admin')}}/svg/components/excel.svg" alt="{{ translate('excel') }}">
+                            <img class="avatar avatar-xss avatar-4by3 mr-2" src="{{asset('assets/admin')}}/svg/components/excel.svg" alt="{{ translate('excel') }}">
                             {{translate('excel')}}
                         </a>
                     </div>
@@ -153,7 +153,7 @@
                 </table>
                 @if(count($adminRoles) === 0)
                     <div class="text-center p-4">
-                        <img class="mb-3 width-7rem" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
+                        <img class="mb-3 width-7rem" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
                         <p class="mb-0">{{ translate('No data to show') }}</p>
                     </div>
                 @endif
@@ -167,5 +167,5 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/custom-role.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/custom-role.js') }}"></script>
 @endpush

@@ -55,7 +55,7 @@
                                                 <span class="line--limit-1">
                                                     <strong>{{translate('free_delivery_over_amount_status')}}</strong>
                                                 </span>
-                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active and the order amount exceeds this free delivery over amount then the delivery fee will be free.')}}"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="info">
+                                                <span class="form-label-secondary text-danger d-flex ml-1" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this field is active and the order amount exceeds this free delivery over amount then the delivery fee will be free.')}}"><img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="info">
                                                 </span>
                                             </span>
                                             <input type="checkbox" class="toggle-switch-input" name="free_delivery_status" {{ $free_delivery_status == 1 ? 'checked' : '' }}>

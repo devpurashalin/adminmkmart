@@ -10,7 +10,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/flash_sale.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/flash_sale.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('flash deal product')}}
@@ -86,7 +86,7 @@
                                                 <img src="{{$flashProduct->identityImageFullPath[0]}}"
                                                     alt="{{ translate('product') }}">
                                             @else
-                                                <img src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}">
+                                                <img src="{{asset('assets/admin/img/400x400/img2.jpg')}}">
                                             @endif
                                             <h6 class="name line--limit-2">
                                                 {{\Illuminate\Support\Str::limit($flashProduct['name'], 20, $end='...')}}

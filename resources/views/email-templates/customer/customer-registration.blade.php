@@ -143,12 +143,12 @@ foreach ($socialMediaList as $social) {
     <tbody>
     <tr>
         <td class="main-table-td">
-            <img style="width:120px;display:block;margin:10px 0" onerror="this.src='{{asset('/public/assets/admin/img//logo/main-logo.png')}}'"
+            <img style="width:120px;display:block;margin:10px 0" onerror="this.src='{{asset('/assets/admin/img//logo/main-logo.png')}}'"
                  src="{{ asset('storage/app/public/restaurant/' . $logo) }}" alt="public/img">
             <h2>{{ translate('Registration Complete !') }}</h2>
             <div class="mb-1">{{ translate('Hi ') }}{{ $name }},</div>
             <div class="mb-4">{{ translate('Congratulations ! Your account at '. $business_name .' has been created successfully.') }}</div>
-            <img class="mb-2" src="{{asset('/public/assets/admin/img/email-templates/dm-reg-complete.png')}}" alt="img">
+            <img class="mb-2" src="{{asset('/assets/admin/img/email-templates/dm-reg-complete.png')}}" alt="img">
             <hr>
             <div class="mb-2">
                 {{ translate('Please contact us for any queries, we’re always happy to help.') }}
@@ -168,19 +168,19 @@ foreach ($socialMediaList as $social) {
                 </span>
             <span class="social" style="text-align:center">
                     <a href="{{ $socialMediaLinks['pinterest'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/pinterest.png')}}" alt="pinterest">
+                        <img src="{{asset('/assets/admin/img/img/pinterest.png')}}" alt="pinterest">
                     </a>
                     <a href="{{ $socialMediaLinks['instagram'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/instagram.png')}}" alt="instagram">
+                        <img src="{{asset('/assets/admin/img/img/instagram.png')}}" alt="instagram">
                     </a>
                     <a href="{{ $socialMediaLinks['facebook'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/facebook.png')}}" alt="facebook">
+                        <img src="{{asset('/assets/admin/img/img/facebook.png')}}" alt="facebook">
                     </a>
                     <a href="{{ $socialMediaLinks['linkedin'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/linkedin.png')}}" alt="linkedin">
+                        <img src="{{asset('/assets/admin/img/img/linkedin.png')}}" alt="linkedin">
                     </a>
                     <a href="{{ $socialMediaLinks['twitter'] ?? '#' }}" style="margin: 0 5px;text-decoration:none">
-                        <img src="{{asset('/public/assets/admin/img/img/twitter.png')}}" alt="twitter">
+                        <img src="{{asset('/assets/admin/img/img/twitter.png')}}" alt="twitter">
                     </a>
                 </span>
             <span class="copyright">

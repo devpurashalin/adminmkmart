@@ -45,7 +45,7 @@ class Category extends Model
     public function getImageFullPathAttribute(): string
     {
         $image = $this->image ?? null;
-        $path = asset('public/assets/admin/img/160x160/2.png');
+        $path = asset('assets/admin/img/160x160/2.png');
 
         if (!is_null($image) && Storage::disk('public')->exists('category/' . $image)) {
             $path = asset('storage/app/public/category/' . $image);

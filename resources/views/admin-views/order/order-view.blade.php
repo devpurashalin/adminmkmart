@@ -8,7 +8,7 @@
             margin-bottom: -1px;
         }
     </style>
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/lightbox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/lightbox.min.css')}}">
 @endpush
 @section('content')
 
@@ -16,7 +16,7 @@
         <div class="page-header d-flex justify-content-between">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/order.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/order.png')}}" class="w--20" alt="">
                 </span>
                 <span>
                     {{translate('order details')}}
@@ -184,7 +184,7 @@
                                                         alt="{{translate('Image Description')}}">
                                                     @else
                                                         <img
-                                                        src="{{asset('public/assets/admin/img/160x160/2.png')}}"
+                                                        src="{{asset('assets/admin/img/160x160/2.png')}}"
                                                         class="img-fluid rounded aspect-ratio-1"
                                                         >
                                                     @endif
@@ -603,7 +603,7 @@
                             @if($order->is_guest == 1)
                                 <div class="media align-items-center deco-none customer--information-single">
                                     <div class="avatar avatar-circle">
-                                        <img class="avatar-img" src="{{asset('public/assets/admin/img/admin.jpg')}}" alt="{{ translate('Image Description')}}">
+                                        <img class="avatar-img" src="{{asset('assets/admin/img/admin.jpg')}}" alt="{{ translate('Image Description')}}">
                                     </div>
                                     <div class="media-body">
                                     <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -615,7 +615,7 @@
                                 @if($order->user_id == null)
                                     <div class="media align-items-center deco-none customer--information-single">
                                         <div class="avatar avatar-circle">
-                                            <img class="avatar-img" src="{{asset('public/assets/admin/img/admin.jpg')}}" alt="{{ translate('Image Description')}}">
+                                            <img class="avatar-img" src="{{asset('assets/admin/img/admin.jpg')}}" alt="{{ translate('Image Description')}}">
                                         </div>
                                         <div class="media-body">
                                     <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -627,7 +627,7 @@
                                 @if($order->user_id != null && !isset($order->customer) )
                                     <div class="media align-items-center deco-none customer--information-single">
                                         <div class="avatar avatar-circle">
-                                            <img class="avatar-img" src="{{asset('public/assets/admin/img/admin.jpg')}}" alt="{{ translate('Image Description')}}">
+                                            <img class="avatar-img" src="{{asset('assets/admin/img/admin.jpg')}}" alt="{{ translate('Image Description')}}">
                                         </div>
                                         <div class="media-body">
                                             <span class="fz--14px text--title font-semibold text-hover-primary d-block">
@@ -969,7 +969,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/flatpicker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/flatpicker.js') }}"></script>
 
     <script>
         "use strict";

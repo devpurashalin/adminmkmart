@@ -8,7 +8,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/category.png')}}" class="w--24" alt="{{ translate('category') }}">
+                    <img src="{{asset('assets/admin/img/category.png')}}" class="w--24" alt="{{ translate('category') }}">
                 </span>
                 <span>
                     {{translate('category_setup')}}
@@ -60,7 +60,7 @@
                                     <div class="col-sm-6">
                                         <div>
                                             <div class="text-center mb-3">
-                                                <img id="viewer" class="img--105" src="{{ asset('public/assets/admin/img/160x160/1.png') }}" alt="{{ translate('image') }}" />
+                                                <img id="viewer" class="img--105" src="{{ asset('assets/admin/img/160x160/1.png') }}" alt="{{ translate('image') }}" />
                                             </div>
                                         </div>
                                         <label class="form-label text-capitalize">{{ translate('category image') }}</label><small class="text-danger">* ( {{ translate('ratio') }}3:1 )</small>
@@ -179,7 +179,7 @@
 
                         @if(count($categories) == 0)
                         <div class="text-center p-4">
-                            <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
+                            <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="{{ translate('image') }}">
                             <p class="mb-0">{{translate('No_data_to_show')}}</p>
                         </div>
                         @endif
@@ -199,7 +199,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/category.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/category.js') }}"></script>
     <script>
         "use strict";
 

@@ -40,7 +40,7 @@ class FlashDeal extends Model
     public function getImageFullPathAttribute(): string
     {
         $image = $this->image ?? null;
-        $path = asset('public/assets/admin/img/160x160/2.png');
+        $path = asset('assets/admin/img/160x160/2.png');
 
         if (!is_null($image) && Storage::disk('public')->exists('offer/' . $image)) {
             $path = asset('storage/app/public/offer/' . $image);
@@ -57,7 +57,7 @@ class FlashDeal extends Model
                 if (Storage::disk('public')->exists('product/' . $item)) {
                     $imageUrlArray[$key] = asset('storage/app/public/product/'. $item) ;
                 } else {
-                    $imageUrlArray[$key] = asset('public/assets/admin/img/160x160/2.png');
+                    $imageUrlArray[$key] = asset('assets/admin/img/160x160/2.png');
                 }
             }
             return isset($imageUrlArray[0]) ? $imageUrlArray[0] : '';

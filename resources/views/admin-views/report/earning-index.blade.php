@@ -15,7 +15,7 @@
         <div class="page-header">
             <div class="media align-items-center mb-2">
                 <div class="">
-                    <img src="{{asset('public/assets/admin/img/image-4.png')}}" class="w--20" alt="">
+                    <img src="{{asset('assets/admin/img/image-4.png')}}" class="w--20" alt="">
                 </div>
 
                 <div class="media-body pl-3">
@@ -435,12 +435,12 @@
 
 @push('script_2')
 
-    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
     <script
-        src="{{asset('public/assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{asset('public/assets/admin')}}/js/hs.chartjs-matrix.js"></script>
-    <script src="{{asset('public/assets/admin/js/flatpicker.js')}}"></script>
-    <script src="{{asset('public/assets/admin/js/earning.js')}}"></script>
+        src="{{asset('assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{asset('assets/admin')}}/js/hs.chartjs-matrix.js"></script>
+    <script src="{{asset('assets/admin/js/flatpicker.js')}}"></script>
+    <script src="{{asset('assets/admin/js/earning.js')}}"></script>
 
     <script>
         $('#from_date,#to_date').change(function () {
