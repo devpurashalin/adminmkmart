@@ -6,7 +6,6 @@ tasks:
       sudo service mysql start
 
       mysql -u root -e "CREATE DATABASE IF NOT EXISTS mukeshkirana;"
-
       mysql -u root mukeshkirana < database_dump.sql
 
       cp .env.example .env

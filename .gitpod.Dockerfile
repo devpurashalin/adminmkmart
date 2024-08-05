@@ -6,7 +6,8 @@ RUN sudo apt-get update && sudo apt-get install -y \
     php-mbstring \
     php-xml \
     php-mysql \
-    php-sqlite3
+    php-sqlite3 \
+    openssl
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -18,5 +19,11 @@ RUN sudo apt-get install -y nodejs
 # Install MySQL
 RUN sudo apt-get install -y mysql-server
 
+# Enable MySQL extensions
+RUN sudo docker-php-ext-install mysqli pdo pdo_mysql
+
+# Expose port 8000 for Laravel
+EXPOSE 8000
+
 # Start MySQL service
-RUN sudo service mysql start
+CMD sudo service mysql start && tail -f /dev/null
